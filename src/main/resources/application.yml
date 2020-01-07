@@ -1,0 +1,27 @@
+spring.cloud:
+  stream:
+    bindings:
+      process-in-0:
+        destination: topic1
+        group: group1
+      process-out-0:
+        destination: topic2
+        producer:
+          useNativeEncoding: true
+
+    kafka:
+      binder:
+        brokers: ${env.properties.kafka-brokers}
+      bindings:
+        process-out-0:
+          producer:
+            configuration:
+              key.serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+              value.serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+              auto.register.schemas: true
+              key.subject.name.strategy: io.confluent.kafka.serializers.subject.TopicNameStrategy
+              value.subject.name.strategy: io.confluent.kafka.serializers.subject.TopicRecordNameStrategy
+              schema.registry.url: http://localhost:8081
+
+    schema-registry-client:
+      endpoint: http://localhost:8081

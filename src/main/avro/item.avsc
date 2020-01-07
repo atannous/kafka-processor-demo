@@ -1,0 +1,10 @@
+{
+  "namespace": "com.example.stream.demo.avro",
+  "type": "record",
+  "name": "Item",
+  "fields": [
+    {"name": "id", "type": "long"},
+    {"name": "name", "type": "string"},
+    {"name": "like", "type": "boolean"}
+  ]
+}
