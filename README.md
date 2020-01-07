@@ -12,10 +12,10 @@ To run the annotation-based stream processor:
 SPRING_PROFILES_ACTIVE=basic ./gradlew bootrun
 ```
 
-To run the reactive stream processor:
+To run the function-based stream processor:
 
 ```bash
-SPRING_PROFILES_ACTIVE=reactive ./gradlew bootrun
+SPRING_PROFILES_ACTIVE=function ./gradlew bootrun
 ```
 
 
