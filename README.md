@@ -1,10 +1,10 @@
-##Setup
+## Setup
 
 * Run `docker-compose` with https://github.com/confluentinc/examples/tree/5.3.1-post/cp-all-in-one
 * Download confluent from https://www.confluent.io/download/ to use the consule consumers.
 
 
-##Running
+## Running
 
 To run the annotation-based stream processor:
 
@@ -19,7 +19,7 @@ SPRING_PROFILES_ACTIVE=reactive ./gradlew bootrun
 ```
 
 
-##Sending Data
+## Sending Data
 
 1- Open producer and consumer, each in a different terminal window.
 
