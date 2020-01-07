@@ -9,7 +9,7 @@ import java.util.function.Function;
 
 @Profile("function")
 @Component
-public class KafkaReactiveProcessor {
+public class KafkaFunctionalProcessor {
 
     @Bean
     public Function<String, Item> process() {
