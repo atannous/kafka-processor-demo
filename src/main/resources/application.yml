@@ -10,8 +10,6 @@ spring.cloud:
           useNativeEncoding: true
 
     kafka:
-      binder:
-        brokers: ${env.properties.kafka-brokers}
       bindings:
         process-out-0:
           producer:
