@@ -29,7 +29,7 @@ repositories {
 }
 
 ext {
-    set('springCloudStreamVersion', "Horsham.RELEASE")
+    set('springCloudStreamVersion', "Horsham.SR1")
 }
 
 dependencies {
